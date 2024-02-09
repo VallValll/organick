@@ -99,7 +99,7 @@ const vh_fix_init = () => {
 /* globals GLOBAL_DOMAIN, GLOBAL_PATH */
 
 const domain = "/";
-const baseDir = "./";
+const baseDir = "/organick/";
 /* harmony default export */ const general = ({
   domain,
   baseDir,
