@@ -5,7 +5,7 @@
 
 
 // EXTERNAL MODULE: ../node_modules/lodash.debounce/index.js
-var lodash_debounce = __webpack_require__(70);
+var lodash_debounce = __webpack_require__(69);
 var lodash_debounce_default = /*#__PURE__*/__webpack_require__.n(lodash_debounce);
 // EXTERNAL MODULE: ../node_modules/lodash.throttle/index.js
 var lodash_throttle = __webpack_require__(67);
@@ -800,7 +800,7 @@ const lazyBlur_init = () => {
   init: lazyBlur_init
 });
 // EXTERNAL MODULE: ../node_modules/ninelines-sharing/dist/ninelines-sharing.js
-var ninelines_sharing = __webpack_require__(120);
+var ninelines_sharing = __webpack_require__(119);
 var ninelines_sharing_default = /*#__PURE__*/__webpack_require__.n(ninelines_sharing);
 ;// CONCATENATED MODULE: ./components/sharing/sharing.js
 
@@ -951,14 +951,13 @@ function header_init() {
 var aos = __webpack_require__(68);
 var aos_default = /*#__PURE__*/__webpack_require__.n(aos);
 // EXTERNAL MODULE: ../node_modules/simple-parallax-js/dist/simpleParallax.min.js
-var simpleParallax_min = __webpack_require__(69);
+var simpleParallax_min = __webpack_require__(120);
 var simpleParallax_min_default = /*#__PURE__*/__webpack_require__.n(simpleParallax_min);
 ;// CONCATENATED MODULE: ./components/paralax/paralax.js
 
 function paralax_init() {
   document.querySelectorAll('.thumbnail').forEach(el => {
     // eslint-disable-next-line no-new
-
     new (simpleParallax_min_default())(el, {
       overflow: !!el.dataset.overflow,
       scale: el.dataset.scale ? Number(el.dataset.scale) : 1.2,
@@ -985,7 +984,6 @@ function paralax_init() {
 // import router from '@components/router/router';
 // import home from '../pages/home/home';
 // import article from '../pages/article/article';
-
 
 
 

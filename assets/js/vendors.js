@@ -20,12 +20,12 @@ module.exports = NATIVE_BIND ? uncurryThisWithBind : function (fn) {
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 var global = __webpack_require__(7);
-var getOwnPropertyDescriptor = (__webpack_require__(73).f);
+var getOwnPropertyDescriptor = (__webpack_require__(72).f);
 var createNonEnumerableProperty = __webpack_require__(19);
 var defineBuiltIn = __webpack_require__(30);
 var defineGlobalProperty = __webpack_require__(38);
-var copyConstructorProperties = __webpack_require__(84);
-var isForced = __webpack_require__(90);
+var copyConstructorProperties = __webpack_require__(83);
+var isForced = __webpack_require__(89);
 
 /*
   options.target         - name of the target object
@@ -283,7 +283,7 @@ module.exports = $documentAll.IS_HTMLDDA ? function (it) {
 
 var getBuiltIn = __webpack_require__(27);
 var isCallable = __webpack_require__(2);
-var isIterable = __webpack_require__(112);
+var isIterable = __webpack_require__(111);
 var isObject = __webpack_require__(13);
 
 var Set = getBuiltIn('Set');
@@ -417,7 +417,7 @@ exports.f = DESCRIPTORS ? V8_PROTOTYPE_DEFINE_BUG ? function defineProperty(O, P
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 // toObject with fallback for non-array-like ES3 strings
-var IndexedObject = __webpack_require__(74);
+var IndexedObject = __webpack_require__(73);
 var requireObjectCoercible = __webpack_require__(25);
 
 module.exports = function (it) {
@@ -445,7 +445,7 @@ module.exports = DESCRIPTORS ? function (object, key, value) {
 /* 20 */
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
-var trunc = __webpack_require__(88);
+var trunc = __webpack_require__(87);
 
 // `ToIntegerOrInfinity` abstract operation
 // https://tc39.es/ecma262/#sec-tointegerorinfinity
@@ -565,7 +565,7 @@ module.exports = function (namespace, method) {
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 var isCallable = __webpack_require__(2);
-var tryToString = __webpack_require__(79);
+var tryToString = __webpack_require__(78);
 
 var $TypeError = TypeError;
 
@@ -589,7 +589,7 @@ module.exports = false;
 
 var isCallable = __webpack_require__(2);
 var definePropertyModule = __webpack_require__(17);
-var makeBuiltIn = __webpack_require__(81);
+var makeBuiltIn = __webpack_require__(80);
 var defineGlobalProperty = __webpack_require__(38);
 
 module.exports = function (O, key, value, options) {
@@ -639,7 +639,7 @@ var anObject = __webpack_require__(12);
 var definePropertiesModule = __webpack_require__(128);
 var enumBugKeys = __webpack_require__(44);
 var hiddenKeys = __webpack_require__(43);
-var html = __webpack_require__(95);
+var html = __webpack_require__(94);
 var documentCreateElement = __webpack_require__(40);
 var sharedKey = __webpack_require__(42);
 
@@ -839,7 +839,7 @@ module.exports = function (it) {
 /* 41 */
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
-var NATIVE_WEAK_MAP = __webpack_require__(83);
+var NATIVE_WEAK_MAP = __webpack_require__(82);
 var global = __webpack_require__(7);
 var isObject = __webpack_require__(13);
 var createNonEnumerableProperty = __webpack_require__(19);
@@ -958,13 +958,13 @@ module.exports = [
 var call = __webpack_require__(3);
 var uncurryThis = __webpack_require__(0);
 var toString = __webpack_require__(31);
-var regexpFlags = __webpack_require__(92);
-var stickyHelpers = __webpack_require__(93);
+var regexpFlags = __webpack_require__(91);
+var stickyHelpers = __webpack_require__(92);
 var shared = __webpack_require__(36);
 var create = __webpack_require__(32);
 var getInternalState = (__webpack_require__(41).get);
-var UNSUPPORTED_DOT_ALL = __webpack_require__(96);
-var UNSUPPORTED_NCG = __webpack_require__(97);
+var UNSUPPORTED_DOT_ALL = __webpack_require__(95);
+var UNSUPPORTED_NCG = __webpack_require__(96);
 
 var nativeReplace = shared('native-string-replace', String.prototype.replace);
 var nativeExec = RegExp.prototype.exec;
@@ -1249,7 +1249,7 @@ function getWindow() {
 /* 48 */
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
-var toPrimitive = __webpack_require__(75);
+var toPrimitive = __webpack_require__(74);
 var isSymbol = __webpack_require__(50);
 
 // `ToPropertyKey` abstract operation
@@ -1282,7 +1282,7 @@ module.exports = {
 
 var getBuiltIn = __webpack_require__(27);
 var isCallable = __webpack_require__(2);
-var isPrototypeOf = __webpack_require__(76);
+var isPrototypeOf = __webpack_require__(75);
 var USE_SYMBOL_AS_UID = __webpack_require__(51);
 
 var $Object = Object;
@@ -1312,7 +1312,7 @@ module.exports = NATIVE_SYMBOL
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 /* eslint-disable es/no-symbol -- required for testing */
-var V8_VERSION = __webpack_require__(77);
+var V8_VERSION = __webpack_require__(76);
 var fails = __webpack_require__(5);
 
 // eslint-disable-next-line es/no-object-getownpropertysymbols -- required for testing
@@ -1406,7 +1406,7 @@ module.exports = {
 var uncurryThis = __webpack_require__(0);
 var hasOwn = __webpack_require__(11);
 var toIndexedObject = __webpack_require__(18);
-var indexOf = (__webpack_require__(86).indexOf);
+var indexOf = (__webpack_require__(85).indexOf);
 var hiddenKeys = __webpack_require__(43);
 
 var push = uncurryThis([].push);
@@ -1444,7 +1444,7 @@ module.exports = function (argument) {
 /* 59 */
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
-var TO_STRING_TAG_SUPPORT = __webpack_require__(91);
+var TO_STRING_TAG_SUPPORT = __webpack_require__(90);
 var isCallable = __webpack_require__(2);
 var classofRaw = __webpack_require__(24);
 var wellKnownSymbol = __webpack_require__(9);
@@ -1553,7 +1553,7 @@ var hasOwn = __webpack_require__(11);
 var isCallable = __webpack_require__(2);
 var toObject = __webpack_require__(39);
 var sharedKey = __webpack_require__(42);
-var CORRECT_PROTOTYPE_GETTER = __webpack_require__(108);
+var CORRECT_PROTOTYPE_GETTER = __webpack_require__(107);
 
 var IE_PROTO = sharedKey('IE_PROTO');
 var $Object = Object;
@@ -3282,18 +3282,6 @@ module.exports = throttle;
 
 /***/ }),
 /* 69 */
-/***/ ((module) => {
-
-/*!
- * simpleParallax.min - simpleParallax is a simple JavaScript library that gives your website parallax animations on any images or videos, 
- * @date: 20-08-2020 14:0:14, 
- * @version: 5.6.2,
- * @link: https://simpleparallax.com/
- */
-!function(t,e){ true?module.exports=e():0}(window,(function(){return function(t){var e={};function n(i){if(e[i])return e[i].exports;var r=e[i]={i:i,l:!1,exports:{}};return t[i].call(r.exports,r,r.exports,n),r.l=!0,r.exports}return n.m=t,n.c=e,n.d=function(t,e,i){n.o(t,e)||Object.defineProperty(t,e,{enumerable:!0,get:i})},n.r=function(t){"undefined"!=typeof Symbol&&Symbol.toStringTag&&Object.defineProperty(t,Symbol.toStringTag,{value:"Module"}),Object.defineProperty(t,"__esModule",{value:!0})},n.t=function(t,e){if(1&e&&(t=n(t)),8&e)return t;if(4&e&&"object"==typeof t&&t&&t.__esModule)return t;var i=Object.create(null);if(n.r(i),Object.defineProperty(i,"default",{enumerable:!0,value:t}),2&e&&"string"!=typeof t)for(var r in t)n.d(i,r,function(e){return t[e]}.bind(null,r));return i},n.n=function(t){var e=t&&t.__esModule?function(){return t.default}:function(){return t};return n.d(e,"a",e),e},n.o=function(t,e){return Object.prototype.hasOwnProperty.call(t,e)},n.p="",n(n.s=0)}([function(t,e,n){"use strict";n.r(e),n.d(e,"default",(function(){return x}));var i=function(){return Element.prototype.closest&&"IntersectionObserver"in window};function r(t,e){for(var n=0;n<e.length;n++){var i=e[n];i.enumerable=i.enumerable||!1,i.configurable=!0,"value"in i&&(i.writable=!0),Object.defineProperty(t,i.key,i)}}var s=new(function(){function t(){!function(t,e){if(!(t instanceof e))throw new TypeError("Cannot call a class as a function")}(this,t),this.positions={top:0,bottom:0,height:0}}var e,n,i;return e=t,(n=[{key:"setViewportTop",value:function(t){return this.positions.top=t?t.scrollTop:window.pageYOffset,this.positions}},{key:"setViewportBottom",value:function(){return this.positions.bottom=this.positions.top+this.positions.height,this.positions}},{key:"setViewportAll",value:function(t){return this.positions.top=t?t.scrollTop:window.pageYOffset,this.positions.height=t?t.clientHeight:document.documentElement.clientHeight,this.positions.bottom=this.positions.top+this.positions.height,this.positions}}])&&r(e.prototype,n),i&&r(e,i),t}()),o=function(t){return NodeList.prototype.isPrototypeOf(t)||HTMLCollection.prototype.isPrototypeOf(t)?Array.from(t):"string"==typeof t||t instanceof String?document.querySelectorAll(t):[t]},a=function(){for(var t,e="transform webkitTransform mozTransform oTransform msTransform".split(" "),n=0;void 0===t;)t=void 0!==document.createElement("div").style[e[n]]?e[n]:void 0,n+=1;return t}(),l=function(t){return"img"!==t.tagName.toLowerCase()&&"picture"!==t.tagName.toLowerCase()||!!t&&(!!t.complete&&(void 0===t.naturalWidth||0!==t.naturalWidth))};function u(t){return function(t){if(Array.isArray(t))return c(t)}(t)||function(t){if("undefined"!=typeof Symbol&&Symbol.iterator in Object(t))return Array.from(t)}(t)||function(t,e){if(!t)return;if("string"==typeof t)return c(t,e);var n=Object.prototype.toString.call(t).slice(8,-1);"Object"===n&&t.constructor&&(n=t.constructor.name);if("Map"===n||"Set"===n)return Array.from(t);if("Arguments"===n||/^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n))return c(t,e)}(t)||function(){throw new TypeError("Invalid attempt to spread non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.")}()}function c(t,e){(null==e||e>t.length)&&(e=t.length);for(var n=0,i=new Array(e);n<e;n++)i[n]=t[n];return i}function h(t,e){for(var n=0;n<e.length;n++){var i=e[n];i.enumerable=i.enumerable||!1,i.configurable=!0,"value"in i&&(i.writable=!0),Object.defineProperty(t,i.key,i)}}var f=function(){function t(e,n){var i=this;!function(t,e){if(!(t instanceof e))throw new TypeError("Cannot call a class as a function")}(this,t),this.element=e,this.elementContainer=e,this.settings=n,this.isVisible=!0,this.isInit=!1,this.oldTranslateValue=-1,this.init=this.init.bind(this),this.customWrapper=this.settings.customWrapper&&this.element.closest(this.settings.customWrapper)?this.element.closest(this.settings.customWrapper):null,l(e)?this.init():this.element.addEventListener("load",(function(){setTimeout((function(){i.init(!0)}),50)}))}var e,n,i;return e=t,(n=[{key:"init",value:function(t){var e=this;this.isInit||(t&&(this.rangeMax=null),this.element.closest(".simpleParallax")||(!1===this.settings.overflow&&this.wrapElement(this.element),this.setTransformCSS(),this.getElementOffset(),this.intersectionObserver(),this.getTranslateValue(),this.animate(),this.settings.delay>0?setTimeout((function(){e.setTransitionCSS(),e.elementContainer.classList.add("simple-parallax-initialized")}),10):this.elementContainer.classList.add("simple-parallax-initialized"),this.isInit=!0))}},{key:"wrapElement",value:function(){var t=this.element.closest("picture")||this.element,e=this.customWrapper||document.createElement("div");e.classList.add("simpleParallax"),e.style.overflow="hidden",this.customWrapper||(t.parentNode.insertBefore(e,t),e.appendChild(t)),this.elementContainer=e}},{key:"unWrapElement",value:function(){var t=this.elementContainer;this.customWrapper?(t.classList.remove("simpleParallax"),t.style.overflow=""):t.replaceWith.apply(t,u(t.childNodes))}},{key:"setTransformCSS",value:function(){!1===this.settings.overflow&&(this.element.style[a]="scale(".concat(this.settings.scale,")")),this.element.style.willChange="transform"}},{key:"setTransitionCSS",value:function(){this.element.style.transition="transform ".concat(this.settings.delay,"s ").concat(this.settings.transition)}},{key:"unSetStyle",value:function(){this.element.style.willChange="",this.element.style[a]="",this.element.style.transition=""}},{key:"getElementOffset",value:function(){var t=this.elementContainer.getBoundingClientRect();if(this.elementHeight=t.height,this.elementTop=t.top+s.positions.top,this.settings.customContainer){var e=this.settings.customContainer.getBoundingClientRect();this.elementTop=t.top-e.top+s.positions.top}this.elementBottom=this.elementHeight+this.elementTop}},{key:"buildThresholdList",value:function(){for(var t=[],e=1;e<=this.elementHeight;e++){var n=e/this.elementHeight;t.push(n)}return t}},{key:"intersectionObserver",value:function(){var t={root:null,threshold:this.buildThresholdList()};this.observer=new IntersectionObserver(this.intersectionObserverCallback.bind(this),t),this.observer.observe(this.element)}},{key:"intersectionObserverCallback",value:function(t){var e=this;t.forEach((function(t){t.isIntersecting?e.isVisible=!0:e.isVisible=!1}))}},{key:"checkIfVisible",value:function(){return this.elementBottom>s.positions.top&&this.elementTop<s.positions.bottom}},{key:"getRangeMax",value:function(){var t=this.element.clientHeight;this.rangeMax=t*this.settings.scale-t}},{key:"getTranslateValue",value:function(){var t=((s.positions.bottom-this.elementTop)/((s.positions.height+this.elementHeight)/100)).toFixed(1);return t=Math.min(100,Math.max(0,t)),0!==this.settings.maxTransition&&t>this.settings.maxTransition&&(t=this.settings.maxTransition),this.oldPercentage!==t&&(this.rangeMax||this.getRangeMax(),this.translateValue=(t/100*this.rangeMax-this.rangeMax/2).toFixed(0),this.oldTranslateValue!==this.translateValue&&(this.oldPercentage=t,this.oldTranslateValue=this.translateValue,!0))}},{key:"animate",value:function(){var t,e=0,n=0;(this.settings.orientation.includes("left")||this.settings.orientation.includes("right"))&&(n="".concat(this.settings.orientation.includes("left")?-1*this.translateValue:this.translateValue,"px")),(this.settings.orientation.includes("up")||this.settings.orientation.includes("down"))&&(e="".concat(this.settings.orientation.includes("up")?-1*this.translateValue:this.translateValue,"px")),t=!1===this.settings.overflow?"translate3d(".concat(n,", ").concat(e,", 0) scale(").concat(this.settings.scale,")"):"translate3d(".concat(n,", ").concat(e,", 0)"),this.element.style[a]=t}}])&&h(e.prototype,n),i&&h(e,i),t}();function m(t){return function(t){if(Array.isArray(t))return y(t)}(t)||function(t){if("undefined"!=typeof Symbol&&Symbol.iterator in Object(t))return Array.from(t)}(t)||d(t)||function(){throw new TypeError("Invalid attempt to spread non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.")}()}function p(t,e){return function(t){if(Array.isArray(t))return t}(t)||function(t,e){if("undefined"==typeof Symbol||!(Symbol.iterator in Object(t)))return;var n=[],i=!0,r=!1,s=void 0;try{for(var o,a=t[Symbol.iterator]();!(i=(o=a.next()).done)&&(n.push(o.value),!e||n.length!==e);i=!0);}catch(t){r=!0,s=t}finally{try{i||null==a.return||a.return()}finally{if(r)throw s}}return n}(t,e)||d(t,e)||function(){throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.")}()}function d(t,e){if(t){if("string"==typeof t)return y(t,e);var n=Object.prototype.toString.call(t).slice(8,-1);return"Object"===n&&t.constructor&&(n=t.constructor.name),"Map"===n||"Set"===n?Array.from(t):"Arguments"===n||/^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)?y(t,e):void 0}}function y(t,e){(null==e||e>t.length)&&(e=t.length);for(var n=0,i=new Array(e);n<e;n++)i[n]=t[n];return i}function v(t,e){for(var n=0;n<e.length;n++){var i=e[n];i.enumerable=i.enumerable||!1,i.configurable=!0,"value"in i&&(i.writable=!0),Object.defineProperty(t,i.key,i)}}var g,b,w=!1,T=[],x=function(){function t(e,n){if(function(t,e){if(!(t instanceof e))throw new TypeError("Cannot call a class as a function")}(this,t),e&&i()){if(this.elements=o(e),this.defaults={delay:0,orientation:"up",scale:1.3,overflow:!1,transition:"cubic-bezier(0,0,0,1)",customContainer:"",customWrapper:"",maxTransition:0},this.settings=Object.assign(this.defaults,n),this.settings.customContainer){var r=p(o(this.settings.customContainer),1);this.customContainer=r[0]}this.lastPosition=-1,this.resizeIsDone=this.resizeIsDone.bind(this),this.refresh=this.refresh.bind(this),this.proceedRequestAnimationFrame=this.proceedRequestAnimationFrame.bind(this),this.init()}}var e,n,r;return e=t,(n=[{key:"init",value:function(){var t=this;s.setViewportAll(this.customContainer),T=[].concat(m(this.elements.map((function(e){return new f(e,t.settings)}))),m(T)),w||(this.proceedRequestAnimationFrame(),window.addEventListener("resize",this.resizeIsDone),w=!0)}},{key:"resizeIsDone",value:function(){clearTimeout(b),b=setTimeout(this.refresh,200)}},{key:"proceedRequestAnimationFrame",value:function(){var t=this;s.setViewportTop(this.customContainer),this.lastPosition!==s.positions.top?(s.setViewportBottom(),T.forEach((function(e){t.proceedElement(e)})),g=window.requestAnimationFrame(this.proceedRequestAnimationFrame),this.lastPosition=s.positions.top):g=window.requestAnimationFrame(this.proceedRequestAnimationFrame)}},{key:"proceedElement",value:function(t){(this.customContainer?t.checkIfVisible():t.isVisible)&&t.getTranslateValue()&&t.animate()}},{key:"refresh",value:function(){s.setViewportAll(this.customContainer),T.forEach((function(t){t.getElementOffset(),t.getRangeMax()})),this.lastPosition=-1}},{key:"destroy",value:function(){var t=this,e=[];T=T.filter((function(n){return t.elements.includes(n.element)?(e.push(n),!1):n})),e.forEach((function(e){e.unSetStyle(),!1===t.settings.overflow&&e.unWrapElement()})),T.length||(window.cancelAnimationFrame(g),window.removeEventListener("resize",this.refresh),w=!1)}}])&&v(e.prototype,n),r&&v(e,r),t}()}]).default}));
-
-/***/ }),
-/* 70 */
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 /**
@@ -3676,7 +3664,7 @@ module.exports = debounce;
 
 
 /***/ }),
-/* 71 */
+/* 70 */
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 var NATIVE_BIND = __webpack_require__(23);
@@ -3692,7 +3680,7 @@ module.exports = typeof Reflect == 'object' && Reflect.apply || (NATIVE_BIND ? c
 
 
 /***/ }),
-/* 72 */
+/* 71 */
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 
@@ -3772,7 +3760,7 @@ module.exports = function (KEY, exec, FORCED, SHAM) {
 
 
 /***/ }),
-/* 73 */
+/* 72 */
 /***/ ((__unused_webpack_module, exports, __webpack_require__) => {
 
 var DESCRIPTORS = __webpack_require__(10);
@@ -3800,7 +3788,7 @@ exports.f = DESCRIPTORS ? $getOwnPropertyDescriptor : function getOwnPropertyDes
 
 
 /***/ }),
-/* 74 */
+/* 73 */
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 var uncurryThis = __webpack_require__(0);
@@ -3821,14 +3809,14 @@ module.exports = fails(function () {
 
 
 /***/ }),
-/* 75 */
+/* 74 */
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 var call = __webpack_require__(3);
 var isObject = __webpack_require__(13);
 var isSymbol = __webpack_require__(50);
 var getMethod = __webpack_require__(35);
-var ordinaryToPrimitive = __webpack_require__(80);
+var ordinaryToPrimitive = __webpack_require__(79);
 var wellKnownSymbol = __webpack_require__(9);
 
 var $TypeError = TypeError;
@@ -3852,7 +3840,7 @@ module.exports = function (input, pref) {
 
 
 /***/ }),
-/* 76 */
+/* 75 */
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 var uncurryThis = __webpack_require__(0);
@@ -3861,11 +3849,11 @@ module.exports = uncurryThis({}.isPrototypeOf);
 
 
 /***/ }),
-/* 77 */
+/* 76 */
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 var global = __webpack_require__(7);
-var userAgent = __webpack_require__(78);
+var userAgent = __webpack_require__(77);
 
 var process = global.process;
 var Deno = global.Deno;
@@ -3894,14 +3882,14 @@ module.exports = version;
 
 
 /***/ }),
-/* 78 */
+/* 77 */
 /***/ ((module) => {
 
 module.exports = typeof navigator != 'undefined' && String(navigator.userAgent) || '';
 
 
 /***/ }),
-/* 79 */
+/* 78 */
 /***/ ((module) => {
 
 var $String = String;
@@ -3916,7 +3904,7 @@ module.exports = function (argument) {
 
 
 /***/ }),
-/* 80 */
+/* 79 */
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 var call = __webpack_require__(3);
@@ -3937,7 +3925,7 @@ module.exports = function (input, pref) {
 
 
 /***/ }),
-/* 81 */
+/* 80 */
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 var uncurryThis = __webpack_require__(0);
@@ -3946,7 +3934,7 @@ var isCallable = __webpack_require__(2);
 var hasOwn = __webpack_require__(11);
 var DESCRIPTORS = __webpack_require__(10);
 var CONFIGURABLE_FUNCTION_NAME = (__webpack_require__(56).CONFIGURABLE);
-var inspectSource = __webpack_require__(82);
+var inspectSource = __webpack_require__(81);
 var InternalStateModule = __webpack_require__(41);
 
 var enforceInternalState = InternalStateModule.enforce;
@@ -3997,7 +3985,7 @@ Function.prototype.toString = makeBuiltIn(function toString() {
 
 
 /***/ }),
-/* 82 */
+/* 81 */
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 var uncurryThis = __webpack_require__(0);
@@ -4017,7 +4005,7 @@ module.exports = store.inspectSource;
 
 
 /***/ }),
-/* 83 */
+/* 82 */
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 var global = __webpack_require__(7);
@@ -4029,12 +4017,12 @@ module.exports = isCallable(WeakMap) && /native code/.test(String(WeakMap));
 
 
 /***/ }),
-/* 84 */
+/* 83 */
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 var hasOwn = __webpack_require__(11);
-var ownKeys = __webpack_require__(85);
-var getOwnPropertyDescriptorModule = __webpack_require__(73);
+var ownKeys = __webpack_require__(84);
+var getOwnPropertyDescriptorModule = __webpack_require__(72);
 var definePropertyModule = __webpack_require__(17);
 
 module.exports = function (target, source, exceptions) {
@@ -4051,7 +4039,7 @@ module.exports = function (target, source, exceptions) {
 
 
 /***/ }),
-/* 85 */
+/* 84 */
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 var getBuiltIn = __webpack_require__(27);
@@ -4071,12 +4059,12 @@ module.exports = getBuiltIn('Reflect', 'ownKeys') || function ownKeys(it) {
 
 
 /***/ }),
-/* 86 */
+/* 85 */
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 var toIndexedObject = __webpack_require__(18);
-var toAbsoluteIndex = __webpack_require__(87);
-var lengthOfArrayLike = __webpack_require__(89);
+var toAbsoluteIndex = __webpack_require__(86);
+var lengthOfArrayLike = __webpack_require__(88);
 
 // `Array.prototype.{ indexOf, includes }` methods implementation
 var createMethod = function (IS_INCLUDES) {
@@ -4109,7 +4097,7 @@ module.exports = {
 
 
 /***/ }),
-/* 87 */
+/* 86 */
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 var toIntegerOrInfinity = __webpack_require__(20);
@@ -4127,7 +4115,7 @@ module.exports = function (index, length) {
 
 
 /***/ }),
-/* 88 */
+/* 87 */
 /***/ ((module) => {
 
 var ceil = Math.ceil;
@@ -4143,7 +4131,7 @@ module.exports = Math.trunc || function trunc(x) {
 
 
 /***/ }),
-/* 89 */
+/* 88 */
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 var toLength = __webpack_require__(58);
@@ -4156,7 +4144,7 @@ module.exports = function (obj) {
 
 
 /***/ }),
-/* 90 */
+/* 89 */
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 var fails = __webpack_require__(5);
@@ -4184,7 +4172,7 @@ module.exports = isForced;
 
 
 /***/ }),
-/* 91 */
+/* 90 */
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 var wellKnownSymbol = __webpack_require__(9);
@@ -4198,7 +4186,7 @@ module.exports = String(test) === '[object z]';
 
 
 /***/ }),
-/* 92 */
+/* 91 */
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 
@@ -4222,7 +4210,7 @@ module.exports = function () {
 
 
 /***/ }),
-/* 93 */
+/* 92 */
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 var fails = __webpack_require__(5);
@@ -4258,7 +4246,7 @@ module.exports = {
 
 
 /***/ }),
-/* 94 */
+/* 93 */
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 var internalObjectKeys = __webpack_require__(57);
@@ -4273,7 +4261,7 @@ module.exports = Object.keys || function keys(O) {
 
 
 /***/ }),
-/* 95 */
+/* 94 */
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 var getBuiltIn = __webpack_require__(27);
@@ -4282,7 +4270,7 @@ module.exports = getBuiltIn('document', 'documentElement');
 
 
 /***/ }),
-/* 96 */
+/* 95 */
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 var fails = __webpack_require__(5);
@@ -4298,7 +4286,7 @@ module.exports = fails(function () {
 
 
 /***/ }),
-/* 97 */
+/* 96 */
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 var fails = __webpack_require__(5);
@@ -4315,11 +4303,11 @@ module.exports = fails(function () {
 
 
 /***/ }),
-/* 98 */
+/* 97 */
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 
-var charAt = (__webpack_require__(99).charAt);
+var charAt = (__webpack_require__(98).charAt);
 
 // `AdvanceStringIndex` abstract operation
 // https://tc39.es/ecma262/#sec-advancestringindex
@@ -4329,7 +4317,7 @@ module.exports = function (S, index, unicode) {
 
 
 /***/ }),
-/* 99 */
+/* 98 */
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 var uncurryThis = __webpack_require__(0);
@@ -4371,7 +4359,7 @@ module.exports = {
 
 
 /***/ }),
-/* 100 */
+/* 99 */
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 var uncurryThis = __webpack_require__(0);
@@ -4421,7 +4409,7 @@ module.exports = function (matched, str, position, captures, namedCaptures, repl
 
 
 /***/ }),
-/* 101 */
+/* 100 */
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 var call = __webpack_require__(3);
@@ -4447,7 +4435,7 @@ module.exports = function (R, S) {
 
 
 /***/ }),
-/* 102 */
+/* 101 */
 /***/ ((module) => {
 
 // iterable DOM collections
@@ -4488,7 +4476,7 @@ module.exports = {
 
 
 /***/ }),
-/* 103 */
+/* 102 */
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 // in old WebKit versions, `element.classList` is not an instance of global `DOMTokenList`
@@ -4501,17 +4489,17 @@ module.exports = DOMTokenListPrototype === Object.prototype ? undefined : DOMTok
 
 
 /***/ }),
-/* 104 */
+/* 103 */
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 
 var toIndexedObject = __webpack_require__(18);
-var addToUnscopables = __webpack_require__(105);
+var addToUnscopables = __webpack_require__(104);
 var Iterators = __webpack_require__(33);
 var InternalStateModule = __webpack_require__(41);
 var defineProperty = (__webpack_require__(17).f);
-var defineIterator = __webpack_require__(106);
-var createIterResultObject = __webpack_require__(111);
+var defineIterator = __webpack_require__(105);
+var createIterResultObject = __webpack_require__(110);
 var IS_PURE = __webpack_require__(29);
 var DESCRIPTORS = __webpack_require__(10);
 
@@ -4569,7 +4557,7 @@ if (!IS_PURE && DESCRIPTORS && values.name !== 'values') try {
 
 
 /***/ }),
-/* 105 */
+/* 104 */
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 var wellKnownSymbol = __webpack_require__(9);
@@ -4595,7 +4583,7 @@ module.exports = function (key) {
 
 
 /***/ }),
-/* 106 */
+/* 105 */
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 
@@ -4604,9 +4592,9 @@ var call = __webpack_require__(3);
 var IS_PURE = __webpack_require__(29);
 var FunctionName = __webpack_require__(56);
 var isCallable = __webpack_require__(2);
-var createIteratorConstructor = __webpack_require__(107);
+var createIteratorConstructor = __webpack_require__(106);
 var getPrototypeOf = __webpack_require__(62);
-var setPrototypeOf = __webpack_require__(109);
+var setPrototypeOf = __webpack_require__(108);
 var setToStringTag = __webpack_require__(63);
 var createNonEnumerableProperty = __webpack_require__(19);
 var defineBuiltIn = __webpack_require__(30);
@@ -4700,7 +4688,7 @@ module.exports = function (Iterable, NAME, IteratorConstructor, next, DEFAULT, I
 
 
 /***/ }),
-/* 107 */
+/* 106 */
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 
@@ -4722,7 +4710,7 @@ module.exports = function (IteratorConstructor, NAME, next, ENUMERABLE_NEXT) {
 
 
 /***/ }),
-/* 108 */
+/* 107 */
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 var fails = __webpack_require__(5);
@@ -4736,13 +4724,13 @@ module.exports = !fails(function () {
 
 
 /***/ }),
-/* 109 */
+/* 108 */
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 /* eslint-disable no-proto -- safe */
 var uncurryThis = __webpack_require__(0);
 var anObject = __webpack_require__(12);
-var aPossiblePrototype = __webpack_require__(110);
+var aPossiblePrototype = __webpack_require__(109);
 
 // `Object.setPrototypeOf` method
 // https://tc39.es/ecma262/#sec-object.setprototypeof
@@ -4769,7 +4757,7 @@ module.exports = Object.setPrototypeOf || ('__proto__' in {} ? function () {
 
 
 /***/ }),
-/* 110 */
+/* 109 */
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 var isCallable = __webpack_require__(2);
@@ -4784,7 +4772,7 @@ module.exports = function (argument) {
 
 
 /***/ }),
-/* 111 */
+/* 110 */
 /***/ ((module) => {
 
 // `CreateIterResultObject` abstract operation
@@ -4795,7 +4783,7 @@ module.exports = function (value, done) {
 
 
 /***/ }),
-/* 112 */
+/* 111 */
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 var classof = __webpack_require__(59);
@@ -4817,7 +4805,7 @@ module.exports = function (it) {
 
 
 /***/ }),
-/* 113 */
+/* 112 */
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 
@@ -4849,7 +4837,7 @@ module.exports = function difference(other) {
 
 
 /***/ }),
-/* 114 */
+/* 113 */
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 
@@ -4901,7 +4889,7 @@ module.exports = function intersection(other) {
 
 
 /***/ }),
-/* 115 */
+/* 114 */
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 
@@ -4929,7 +4917,7 @@ module.exports = function isDisjointFrom(other) {
 
 
 /***/ }),
-/* 116 */
+/* 115 */
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 
@@ -4951,7 +4939,7 @@ module.exports = function isSubsetOf(other) {
 
 
 /***/ }),
-/* 117 */
+/* 116 */
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 
@@ -4976,7 +4964,7 @@ module.exports = function isSupersetOf(other) {
 
 
 /***/ }),
-/* 118 */
+/* 117 */
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 
@@ -5005,7 +4993,7 @@ module.exports = function symmetricDifference(other) {
 
 
 /***/ }),
-/* 119 */
+/* 118 */
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 
@@ -5029,19 +5017,31 @@ module.exports = function union(other) {
 
 
 /***/ }),
-/* 120 */
+/* 119 */
 /***/ ((module) => {
 
 !function(n,e){ true?module.exports=e():0}(self,(function(){return function(){"use strict";var n={d:function(e,t){for(var o in t)n.o(t,o)&&!n.o(e,o)&&Object.defineProperty(e,o,{enumerable:!0,get:t[o]})},o:function(n,e){return Object.prototype.hasOwnProperty.call(n,e)}},e={};function t(n,e){for(var t=0;t<e.length;t++){var o=e[t];o.enumerable=o.enumerable||!1,o.configurable=!0,"value"in o&&(o.writable=!0),Object.defineProperty(n,o.key,o)}}n.d(e,{default:function(){return o}});var o=function(){function n(){!function(n,e){if(!(n instanceof e))throw new TypeError("Cannot call a class as a function")}(this,n)}var e,o;return e=n,o=[{key:"getUrl",value:function(e,t){return n.urlList[e]?n.urlList[e]+encodeURIComponent(t):null}},{key:"openWindow",value:function(n){var e,t=arguments.length>1&&void 0!==arguments[1]?arguments[1]:null,o=arguments.length>2&&void 0!==arguments[2]?arguments[2]:"Поделиться",r=arguments.length>3&&void 0!==arguments[3]?arguments[3]:"width=640,height=480,location=no,toolbar=no,menubar=no";return t?(e=window.open("",o,r),t.then((function(){e.location=n})).catch((function(){e.close()}))):e=window.open(n,o,r),e}},{key:"fb",value:function(e){var t=arguments.length>1&&void 0!==arguments[1]?arguments[1]:null;return n.openWindow(n.getUrl("fb",e),t)}},{key:"vk",value:function(e){var t=arguments.length>1&&void 0!==arguments[1]?arguments[1]:null;return n.openWindow(n.getUrl("vk",e),t)}},{key:"tw",value:function(e){var t=arguments.length>1&&void 0!==arguments[1]?arguments[1]:null;return n.openWindow(n.getUrl("tw",e),t)}},{key:"ok",value:function(e){var t=arguments.length>1&&void 0!==arguments[1]?arguments[1]:null;return n.openWindow(n.getUrl("ok",e),t)}},{key:"tg",value:function(e){var t=arguments.length>1&&void 0!==arguments[1]?arguments[1]:null;return n.openWindow(n.getUrl("tg",e),t,void 0,null)}},{key:"facebook",value:function(e){var t=arguments.length>1&&void 0!==arguments[1]?arguments[1]:null;return n.fb(e,t)}},{key:"vkontakte",value:function(e){var t=arguments.length>1&&void 0!==arguments[1]?arguments[1]:null;return n.vk(e,t)}},{key:"twitter",value:function(e){var t=arguments.length>1&&void 0!==arguments[1]?arguments[1]:null;return n.tw(e,t)}},{key:"odnoklassniki",value:function(e){var t=arguments.length>1&&void 0!==arguments[1]?arguments[1]:null;return n.ok(e,t)}},{key:"telegram",value:function(e){var t=arguments.length>1&&void 0!==arguments[1]?arguments[1]:null;return n.tg(e,t)}}],null&&0,o&&t(e,o),n}();return o.urlList={fb:"https://facebook.com/sharer/sharer.php?u=",vk:"https://vk.com/share.php?url=",tw:"http://twitter.com/share?url=",ok:"https://connect.ok.ru/offer?url=",tg:"https://t.me/share/url?url="},e.default}()}));
+
+/***/ }),
+/* 120 */
+/***/ ((module) => {
+
+/*!
+ * simpleParallax.min - simpleParallax is a simple JavaScript library that gives your website parallax animations on any images or videos, 
+ * @date: 20-08-2020 14:0:14, 
+ * @version: 5.6.2,
+ * @link: https://simpleparallax.com/
+ */
+!function(t,e){ true?module.exports=e():0}(window,(function(){return function(t){var e={};function n(i){if(e[i])return e[i].exports;var r=e[i]={i:i,l:!1,exports:{}};return t[i].call(r.exports,r,r.exports,n),r.l=!0,r.exports}return n.m=t,n.c=e,n.d=function(t,e,i){n.o(t,e)||Object.defineProperty(t,e,{enumerable:!0,get:i})},n.r=function(t){"undefined"!=typeof Symbol&&Symbol.toStringTag&&Object.defineProperty(t,Symbol.toStringTag,{value:"Module"}),Object.defineProperty(t,"__esModule",{value:!0})},n.t=function(t,e){if(1&e&&(t=n(t)),8&e)return t;if(4&e&&"object"==typeof t&&t&&t.__esModule)return t;var i=Object.create(null);if(n.r(i),Object.defineProperty(i,"default",{enumerable:!0,value:t}),2&e&&"string"!=typeof t)for(var r in t)n.d(i,r,function(e){return t[e]}.bind(null,r));return i},n.n=function(t){var e=t&&t.__esModule?function(){return t.default}:function(){return t};return n.d(e,"a",e),e},n.o=function(t,e){return Object.prototype.hasOwnProperty.call(t,e)},n.p="",n(n.s=0)}([function(t,e,n){"use strict";n.r(e),n.d(e,"default",(function(){return x}));var i=function(){return Element.prototype.closest&&"IntersectionObserver"in window};function r(t,e){for(var n=0;n<e.length;n++){var i=e[n];i.enumerable=i.enumerable||!1,i.configurable=!0,"value"in i&&(i.writable=!0),Object.defineProperty(t,i.key,i)}}var s=new(function(){function t(){!function(t,e){if(!(t instanceof e))throw new TypeError("Cannot call a class as a function")}(this,t),this.positions={top:0,bottom:0,height:0}}var e,n,i;return e=t,(n=[{key:"setViewportTop",value:function(t){return this.positions.top=t?t.scrollTop:window.pageYOffset,this.positions}},{key:"setViewportBottom",value:function(){return this.positions.bottom=this.positions.top+this.positions.height,this.positions}},{key:"setViewportAll",value:function(t){return this.positions.top=t?t.scrollTop:window.pageYOffset,this.positions.height=t?t.clientHeight:document.documentElement.clientHeight,this.positions.bottom=this.positions.top+this.positions.height,this.positions}}])&&r(e.prototype,n),i&&r(e,i),t}()),o=function(t){return NodeList.prototype.isPrototypeOf(t)||HTMLCollection.prototype.isPrototypeOf(t)?Array.from(t):"string"==typeof t||t instanceof String?document.querySelectorAll(t):[t]},a=function(){for(var t,e="transform webkitTransform mozTransform oTransform msTransform".split(" "),n=0;void 0===t;)t=void 0!==document.createElement("div").style[e[n]]?e[n]:void 0,n+=1;return t}(),l=function(t){return"img"!==t.tagName.toLowerCase()&&"picture"!==t.tagName.toLowerCase()||!!t&&(!!t.complete&&(void 0===t.naturalWidth||0!==t.naturalWidth))};function u(t){return function(t){if(Array.isArray(t))return c(t)}(t)||function(t){if("undefined"!=typeof Symbol&&Symbol.iterator in Object(t))return Array.from(t)}(t)||function(t,e){if(!t)return;if("string"==typeof t)return c(t,e);var n=Object.prototype.toString.call(t).slice(8,-1);"Object"===n&&t.constructor&&(n=t.constructor.name);if("Map"===n||"Set"===n)return Array.from(t);if("Arguments"===n||/^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n))return c(t,e)}(t)||function(){throw new TypeError("Invalid attempt to spread non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.")}()}function c(t,e){(null==e||e>t.length)&&(e=t.length);for(var n=0,i=new Array(e);n<e;n++)i[n]=t[n];return i}function h(t,e){for(var n=0;n<e.length;n++){var i=e[n];i.enumerable=i.enumerable||!1,i.configurable=!0,"value"in i&&(i.writable=!0),Object.defineProperty(t,i.key,i)}}var f=function(){function t(e,n){var i=this;!function(t,e){if(!(t instanceof e))throw new TypeError("Cannot call a class as a function")}(this,t),this.element=e,this.elementContainer=e,this.settings=n,this.isVisible=!0,this.isInit=!1,this.oldTranslateValue=-1,this.init=this.init.bind(this),this.customWrapper=this.settings.customWrapper&&this.element.closest(this.settings.customWrapper)?this.element.closest(this.settings.customWrapper):null,l(e)?this.init():this.element.addEventListener("load",(function(){setTimeout((function(){i.init(!0)}),50)}))}var e,n,i;return e=t,(n=[{key:"init",value:function(t){var e=this;this.isInit||(t&&(this.rangeMax=null),this.element.closest(".simpleParallax")||(!1===this.settings.overflow&&this.wrapElement(this.element),this.setTransformCSS(),this.getElementOffset(),this.intersectionObserver(),this.getTranslateValue(),this.animate(),this.settings.delay>0?setTimeout((function(){e.setTransitionCSS(),e.elementContainer.classList.add("simple-parallax-initialized")}),10):this.elementContainer.classList.add("simple-parallax-initialized"),this.isInit=!0))}},{key:"wrapElement",value:function(){var t=this.element.closest("picture")||this.element,e=this.customWrapper||document.createElement("div");e.classList.add("simpleParallax"),e.style.overflow="hidden",this.customWrapper||(t.parentNode.insertBefore(e,t),e.appendChild(t)),this.elementContainer=e}},{key:"unWrapElement",value:function(){var t=this.elementContainer;this.customWrapper?(t.classList.remove("simpleParallax"),t.style.overflow=""):t.replaceWith.apply(t,u(t.childNodes))}},{key:"setTransformCSS",value:function(){!1===this.settings.overflow&&(this.element.style[a]="scale(".concat(this.settings.scale,")")),this.element.style.willChange="transform"}},{key:"setTransitionCSS",value:function(){this.element.style.transition="transform ".concat(this.settings.delay,"s ").concat(this.settings.transition)}},{key:"unSetStyle",value:function(){this.element.style.willChange="",this.element.style[a]="",this.element.style.transition=""}},{key:"getElementOffset",value:function(){var t=this.elementContainer.getBoundingClientRect();if(this.elementHeight=t.height,this.elementTop=t.top+s.positions.top,this.settings.customContainer){var e=this.settings.customContainer.getBoundingClientRect();this.elementTop=t.top-e.top+s.positions.top}this.elementBottom=this.elementHeight+this.elementTop}},{key:"buildThresholdList",value:function(){for(var t=[],e=1;e<=this.elementHeight;e++){var n=e/this.elementHeight;t.push(n)}return t}},{key:"intersectionObserver",value:function(){var t={root:null,threshold:this.buildThresholdList()};this.observer=new IntersectionObserver(this.intersectionObserverCallback.bind(this),t),this.observer.observe(this.element)}},{key:"intersectionObserverCallback",value:function(t){var e=this;t.forEach((function(t){t.isIntersecting?e.isVisible=!0:e.isVisible=!1}))}},{key:"checkIfVisible",value:function(){return this.elementBottom>s.positions.top&&this.elementTop<s.positions.bottom}},{key:"getRangeMax",value:function(){var t=this.element.clientHeight;this.rangeMax=t*this.settings.scale-t}},{key:"getTranslateValue",value:function(){var t=((s.positions.bottom-this.elementTop)/((s.positions.height+this.elementHeight)/100)).toFixed(1);return t=Math.min(100,Math.max(0,t)),0!==this.settings.maxTransition&&t>this.settings.maxTransition&&(t=this.settings.maxTransition),this.oldPercentage!==t&&(this.rangeMax||this.getRangeMax(),this.translateValue=(t/100*this.rangeMax-this.rangeMax/2).toFixed(0),this.oldTranslateValue!==this.translateValue&&(this.oldPercentage=t,this.oldTranslateValue=this.translateValue,!0))}},{key:"animate",value:function(){var t,e=0,n=0;(this.settings.orientation.includes("left")||this.settings.orientation.includes("right"))&&(n="".concat(this.settings.orientation.includes("left")?-1*this.translateValue:this.translateValue,"px")),(this.settings.orientation.includes("up")||this.settings.orientation.includes("down"))&&(e="".concat(this.settings.orientation.includes("up")?-1*this.translateValue:this.translateValue,"px")),t=!1===this.settings.overflow?"translate3d(".concat(n,", ").concat(e,", 0) scale(").concat(this.settings.scale,")"):"translate3d(".concat(n,", ").concat(e,", 0)"),this.element.style[a]=t}}])&&h(e.prototype,n),i&&h(e,i),t}();function m(t){return function(t){if(Array.isArray(t))return y(t)}(t)||function(t){if("undefined"!=typeof Symbol&&Symbol.iterator in Object(t))return Array.from(t)}(t)||d(t)||function(){throw new TypeError("Invalid attempt to spread non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.")}()}function p(t,e){return function(t){if(Array.isArray(t))return t}(t)||function(t,e){if("undefined"==typeof Symbol||!(Symbol.iterator in Object(t)))return;var n=[],i=!0,r=!1,s=void 0;try{for(var o,a=t[Symbol.iterator]();!(i=(o=a.next()).done)&&(n.push(o.value),!e||n.length!==e);i=!0);}catch(t){r=!0,s=t}finally{try{i||null==a.return||a.return()}finally{if(r)throw s}}return n}(t,e)||d(t,e)||function(){throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.")}()}function d(t,e){if(t){if("string"==typeof t)return y(t,e);var n=Object.prototype.toString.call(t).slice(8,-1);return"Object"===n&&t.constructor&&(n=t.constructor.name),"Map"===n||"Set"===n?Array.from(t):"Arguments"===n||/^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)?y(t,e):void 0}}function y(t,e){(null==e||e>t.length)&&(e=t.length);for(var n=0,i=new Array(e);n<e;n++)i[n]=t[n];return i}function v(t,e){for(var n=0;n<e.length;n++){var i=e[n];i.enumerable=i.enumerable||!1,i.configurable=!0,"value"in i&&(i.writable=!0),Object.defineProperty(t,i.key,i)}}var g,b,w=!1,T=[],x=function(){function t(e,n){if(function(t,e){if(!(t instanceof e))throw new TypeError("Cannot call a class as a function")}(this,t),e&&i()){if(this.elements=o(e),this.defaults={delay:0,orientation:"up",scale:1.3,overflow:!1,transition:"cubic-bezier(0,0,0,1)",customContainer:"",customWrapper:"",maxTransition:0},this.settings=Object.assign(this.defaults,n),this.settings.customContainer){var r=p(o(this.settings.customContainer),1);this.customContainer=r[0]}this.lastPosition=-1,this.resizeIsDone=this.resizeIsDone.bind(this),this.refresh=this.refresh.bind(this),this.proceedRequestAnimationFrame=this.proceedRequestAnimationFrame.bind(this),this.init()}}var e,n,r;return e=t,(n=[{key:"init",value:function(){var t=this;s.setViewportAll(this.customContainer),T=[].concat(m(this.elements.map((function(e){return new f(e,t.settings)}))),m(T)),w||(this.proceedRequestAnimationFrame(),window.addEventListener("resize",this.resizeIsDone),w=!0)}},{key:"resizeIsDone",value:function(){clearTimeout(b),b=setTimeout(this.refresh,200)}},{key:"proceedRequestAnimationFrame",value:function(){var t=this;s.setViewportTop(this.customContainer),this.lastPosition!==s.positions.top?(s.setViewportBottom(),T.forEach((function(e){t.proceedElement(e)})),g=window.requestAnimationFrame(this.proceedRequestAnimationFrame),this.lastPosition=s.positions.top):g=window.requestAnimationFrame(this.proceedRequestAnimationFrame)}},{key:"proceedElement",value:function(t){(this.customContainer?t.checkIfVisible():t.isVisible)&&t.getTranslateValue()&&t.animate()}},{key:"refresh",value:function(){s.setViewportAll(this.customContainer),T.forEach((function(t){t.getElementOffset(),t.getRangeMax()})),this.lastPosition=-1}},{key:"destroy",value:function(){var t=this,e=[];T=T.filter((function(n){return t.elements.includes(n.element)?(e.push(n),!1):n})),e.forEach((function(e){e.unSetStyle(),!1===t.settings.overflow&&e.unWrapElement()})),T.length||(window.cancelAnimationFrame(g),window.removeEventListener("resize",this.refresh),w=!1)}}])&&v(e.prototype,n),r&&v(e,r),t}()}]).default}));
 
 /***/ }),
 /* 121 */
 /***/ ((__unused_webpack_module, __unused_webpack_exports, __webpack_require__) => {
 
 var global = __webpack_require__(7);
-var DOMIterables = __webpack_require__(102);
-var DOMTokenListPrototype = __webpack_require__(103);
-var ArrayIteratorMethods = __webpack_require__(104);
+var DOMIterables = __webpack_require__(101);
+var DOMTokenListPrototype = __webpack_require__(102);
+var ArrayIteratorMethods = __webpack_require__(103);
 var createNonEnumerableProperty = __webpack_require__(19);
 var wellKnownSymbol = __webpack_require__(9);
 
@@ -5083,10 +5083,10 @@ handlePrototype(DOMTokenListPrototype, 'DOMTokenList');
 /***/ ((__unused_webpack_module, __unused_webpack_exports, __webpack_require__) => {
 
 
-var apply = __webpack_require__(71);
+var apply = __webpack_require__(70);
 var call = __webpack_require__(3);
 var uncurryThis = __webpack_require__(0);
-var fixRegExpWellKnownSymbolLogic = __webpack_require__(72);
+var fixRegExpWellKnownSymbolLogic = __webpack_require__(71);
 var fails = __webpack_require__(5);
 var anObject = __webpack_require__(12);
 var isCallable = __webpack_require__(2);
@@ -5095,10 +5095,10 @@ var toIntegerOrInfinity = __webpack_require__(20);
 var toLength = __webpack_require__(58);
 var toString = __webpack_require__(31);
 var requireObjectCoercible = __webpack_require__(25);
-var advanceStringIndex = __webpack_require__(98);
+var advanceStringIndex = __webpack_require__(97);
 var getMethod = __webpack_require__(35);
-var getSubstitution = __webpack_require__(100);
-var regExpExec = __webpack_require__(101);
+var getSubstitution = __webpack_require__(99);
+var regExpExec = __webpack_require__(100);
 var wellKnownSymbol = __webpack_require__(9);
 
 var REPLACE = wellKnownSymbol('replace');
@@ -5291,7 +5291,7 @@ var V8_PROTOTYPE_DEFINE_BUG = __webpack_require__(55);
 var definePropertyModule = __webpack_require__(17);
 var anObject = __webpack_require__(12);
 var toIndexedObject = __webpack_require__(18);
-var objectKeys = __webpack_require__(94);
+var objectKeys = __webpack_require__(93);
 
 // `Object.defineProperties` method
 // https://tc39.es/ecma262/#sec-object.defineproperties
@@ -5361,7 +5361,7 @@ $({ target: 'Set', proto: true, real: true, forced: true }, {
 var $ = __webpack_require__(1);
 var call = __webpack_require__(3);
 var toSetLike = __webpack_require__(14);
-var $difference = __webpack_require__(113);
+var $difference = __webpack_require__(112);
 
 // `Set.prototype.difference` method
 // https://github.com/tc39/proposal-set-methods
@@ -5457,7 +5457,7 @@ $({ target: 'Set', proto: true, real: true, forced: true }, {
 var $ = __webpack_require__(1);
 var call = __webpack_require__(3);
 var toSetLike = __webpack_require__(14);
-var $intersection = __webpack_require__(114);
+var $intersection = __webpack_require__(113);
 
 // `Set.prototype.intersection` method
 // https://github.com/tc39/proposal-set-methods
@@ -5477,7 +5477,7 @@ $({ target: 'Set', proto: true, real: true, forced: true }, {
 var $ = __webpack_require__(1);
 var call = __webpack_require__(3);
 var toSetLike = __webpack_require__(14);
-var $isDisjointFrom = __webpack_require__(115);
+var $isDisjointFrom = __webpack_require__(114);
 
 // `Set.prototype.isDisjointFrom` method
 // https://github.com/tc39/proposal-set-methods
@@ -5497,7 +5497,7 @@ $({ target: 'Set', proto: true, real: true, forced: true }, {
 var $ = __webpack_require__(1);
 var call = __webpack_require__(3);
 var toSetLike = __webpack_require__(14);
-var $isSubsetOf = __webpack_require__(116);
+var $isSubsetOf = __webpack_require__(115);
 
 // `Set.prototype.isSubsetOf` method
 // https://github.com/tc39/proposal-set-methods
@@ -5517,7 +5517,7 @@ $({ target: 'Set', proto: true, real: true, forced: true }, {
 var $ = __webpack_require__(1);
 var call = __webpack_require__(3);
 var toSetLike = __webpack_require__(14);
-var $isSupersetOf = __webpack_require__(117);
+var $isSupersetOf = __webpack_require__(116);
 
 // `Set.prototype.isSupersetOf` method
 // https://github.com/tc39/proposal-set-methods
@@ -5652,7 +5652,7 @@ $({ target: 'Set', proto: true, real: true, forced: true }, {
 var $ = __webpack_require__(1);
 var call = __webpack_require__(3);
 var toSetLike = __webpack_require__(14);
-var $symmetricDifference = __webpack_require__(118);
+var $symmetricDifference = __webpack_require__(117);
 
 // `Set.prototype.symmetricDifference` method
 // https://github.com/tc39/proposal-set-methods
@@ -5672,7 +5672,7 @@ $({ target: 'Set', proto: true, real: true, forced: true }, {
 var $ = __webpack_require__(1);
 var call = __webpack_require__(3);
 var toSetLike = __webpack_require__(14);
-var $union = __webpack_require__(119);
+var $union = __webpack_require__(118);
 
 // `Set.prototype.union` method
 // https://github.com/tc39/proposal-set-methods
